@@ -1,6 +1,6 @@
 import './index.css';
 
-import {getUsers} from './api/getUsers';
+import {getUsers} from './api/userApi';
 
 // populate table of users from API call
 getUsers().then(result => {
