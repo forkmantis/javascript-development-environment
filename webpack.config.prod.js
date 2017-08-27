@@ -3,6 +3,7 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import WebpackMd5Hash from 'webpack-md5-hash';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import secrets from './secrets.js';
 
 export default {
   debug: true,
@@ -43,7 +44,8 @@ export default {
         minifyJS: true,
         minifyCSS: true,
         minifyURLs: true
-      }
+      },
+      trackJSToken: secrets.trackJSToken
     }),
     // Eliminate duplicate packages when bundling
     new webpack.optimize.DedupePlugin(),
