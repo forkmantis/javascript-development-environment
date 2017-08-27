@@ -1,5 +1,6 @@
 # Application
 src/api/db.json
+dist
 
 ### Node ###
 # Logs
