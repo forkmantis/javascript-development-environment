@@ -1,6 +1,7 @@
 # Application
 src/api/db.json
 dist
+secrets.js
 
 ### Node ###
 # Logs
