@@ -1,3 +1,1 @@
-export default {
-  trackJSToken: 'PUT_TOKEN_HERE'
-}
+process.env.TRACK_JS_TOKEN = 'PUT_TOKEN_HERE';
